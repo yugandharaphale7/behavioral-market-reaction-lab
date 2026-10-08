@@ -1,0 +1,1 @@
+Pipeline outputs appear here after a successful run: research_report.html, event_summary.csv, correlations.csv, panel_regression.csv, and robustness.csv. Counts and findings are generated only from the supplied real data.
