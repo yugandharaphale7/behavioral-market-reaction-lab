@@ -1,0 +1,24 @@
+project:
+  name: behavioral-market-reaction-lab
+  timezone: UTC
+  random_seed: 42
+  source_url: https://www.kaggle.com/datasets/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests
+paths:
+  news_file: data/raw/analyst_ratings_processed.csv
+  prices_file: data/raw/prices.csv
+universe:
+  tickers: [AAPL, MSFT, AMZN, GOOGL, META, NVDA, JPM, XOM, JNJ, WMT]
+input_filter:
+  start_date: null
+  end_date: null
+  news_chunksize: 100000
+features:
+  repetition_similarity_threshold: 0.85
+  novelty_history_days: 30
+events:
+  quantile: 0.9
+statistics:
+  bootstrap_iterations: 1000
+market:
+  benchmark: SPY
+  auto_download_yfinance: true

@@ -1,0 +1,8 @@
+pandas>=2.0
+numpy>=1.24
+pyyaml>=6.0
+plotly>=5.18
+streamlit>=1.32
+yfinance>=0.2.40
+jupyter>=1.0
+nbformat>=5.9
