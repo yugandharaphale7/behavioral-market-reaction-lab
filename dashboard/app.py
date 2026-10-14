@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 st.set_page_config(page_title="Behavioral Market Reaction Lab", page_icon="◈", layout="wide", initial_sidebar_state="expanded")
+ROOT = Path(__file__).resolve().parents[1]
 
 # ---------- Theme ----------
 st.markdown("""
@@ -44,6 +45,8 @@ button[data-baseweb="tab"][aria-selected="true"] { color:var(--cyan); }
 @st.cache_data(show_spinner=False)
 def load_csv(path, dates=None):
     p = Path(path)
+    if not p.is_absolute():
+        p = ROOT / p
     if not p.exists():
         return pd.DataFrame()
     return pd.read_csv(p, parse_dates=dates or [])
