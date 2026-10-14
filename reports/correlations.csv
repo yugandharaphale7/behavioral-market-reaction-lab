@@ -1,0 +1,17 @@
+feature,outcome,rho,p_value,p_value_adj,n
+sentiment_score,return_1d,0.025734302249916692,,,3203
+sentiment_score,return_5d,0.09267806297449444,,,3203
+sentiment_score,return_20d,0.07755293333734013,,,3203
+sentiment_score,volatility_20d,0.036504009323562084,,,3203
+novelty_score,return_1d,0.007156889132994044,,,3203
+novelty_score,return_5d,-0.043866712330405795,,,3203
+novelty_score,return_20d,-0.04015987995832041,,,3203
+novelty_score,volatility_20d,-0.17560762511419217,,,3203
+repeat_ratio,return_1d,0.00816618938621702,,,3203
+repeat_ratio,return_5d,0.048044635761028326,,,3203
+repeat_ratio,return_20d,0.0703504870078497,,,3203
+repeat_ratio,volatility_20d,0.037884814479630935,,,3203
+information_intensity,return_1d,0.029640543530128575,,,3203
+information_intensity,return_5d,0.06700435868346877,,,3203
+information_intensity,return_20d,0.05662530934104699,,,3203
+information_intensity,volatility_20d,0.19220584441755598,,,3203
